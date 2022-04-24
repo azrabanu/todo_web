@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    display: flex;
+    justify-content:center;
+    flex-flow: column wrap;
+    position: relative;
+    filter: blur(5px);
+    
+}
+
+.navbar{
+    
+    margin: 7% 0% 0% 0%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    width: 45%;
+    margin-left: 26%;
+    margin-right: 25%;
+
+}
+
+.tasklist{
+    align-items: flex-start;
+}
+
+span{
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: larger;
+
+}
+
+.icon{
+    font-size: 30px;
+    color: red;
+}
+
+.container{
+    /* border: 2px solid red; */
+    width: 50%;
+    height: auto;
+    /* display: flex; */
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.box{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid red;
+    display: inline-block;
+    margin: 18px;
+    box-shadow: 5px 10px 8px #888888;
+    
+}
+.trip{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-left: 15%;
+}
+.trip a{
+    text-decoration: none;
+    color: red;
+}
+.horizontal1{
+    width: 70%;
+    margin: 0% 0% 0% 29%;
+    
+}
+
+.taskcheck{
+    margin-top: 15%;
+}
+.complete{
+    text-decoration: line-through;
+    color: red;
+    text-align: center;
+}
+
+form{
+    margin: 10px 5px;
+}
+
+/* for Popup */
+.popup{
+    width: 400px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column ;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background-color: white;
+}
+
+.title{
+    text-align: center;
+    color: red;
+    padding: 20px;
+    font-size: large;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.add{
+    font-size: 15px;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px ;
+    background-color: red;
+    color: white;
+    margin-top: 20px;
+}
+
+/* for to do app mobile */
+
+@media screen and (min-width:320px) and (max-width:480px)
+{
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .all{
+        display:flex;
+        justify-content: space-around;
+        flex-flow: column wrap;
+        width: 100vw;
+    }
+    .complete{
+        display: none;
+    }
+    #addlist{
+        display: none;
+    }
+
+    .navbar{
+        /* margin: auto; */
+        width: 82%;
+        margin: 7px 10px 0px 25px;
+        font-size: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* .tasklist{
+        align-items: flex-start;
+    } */
+
+    span{
+        font-family: 'Lato', sans-serif;
+    }
+    #addlist{
+        font-weight: bold;
+    }
+
+    .navbar a{
+        text-align: center;
+        text-decoration: none;
+        font-size: larger;
+
+    }
+
+    .icon{
+        font-size: 30px;
+        color: red;
+    }
+
+    .container{
+        /* border: 2px solid red; */
+        width: 100vw;
+        height: auto;
+        /* display: flex; */
+        /* margin: auto; */
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .box{
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid red;
+        padding: 10px;
+        margin: 30px 10px;
+        display: flex;
+        align-items: center;
+        /* margin: 18px; */
+        box-shadow: 5px 5px 8px #888888;
+    }
+    .trip{
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        text-align:start;
+        font-family: 'Lato', sans-serif;
+        margin-left: 5%;
+    }
+    .trip a{
+        text-decoration: none;
+        color: black;
+    }
+    .horizontal1{
+        width: 70%;
+        margin: 0% 0% 0% 29%;
+        display: none;
+
+    }
+
+    .taskcheck{
+        margin-top: 15%;
+    }
+    .complete{
+        text-decoration: line-through;
+        color: red;
+        text-align: center;
+    }
+
+    form{
+        margin: 10px 5px;
+        display: none;
+    }
+
+    /* for Popup */
+    .popup{
+        width: 70%;
+        height: auto;
+        border: 2px solid red;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column ;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        background-color: white;
+    }
+
+    .title{
+        text-align: center;
+        color: red;
+        padding: 20px;
+        font-size: large;
+    }
+
+    input{
+        width: 80%;
+        height: 30px;
+        margin: 5%;
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+
+    .add{
+        font-size: 15px;
+        border: 1px solid red;
+        border-radius: 15px;
+        padding: 5px 10px 5px 10px ;
+        background-color: red;
+        color: white;
+        margin: 5px 0px 15px;
+    }
+
+    
+}
